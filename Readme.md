@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Рамазан Цухаров](https://up.htmlacademy.ru/htmlcss-individual/2/user/2658997).
-* Наставник: `Неизвестно`.
+* Наставник: [Екатерина Комнатная] (https://htmlacademy.ru/profile/id215761).
 
 ---
 
