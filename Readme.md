@@ -2,6 +2,7 @@
 
 * Студент: [Рамазан Цухаров](https://up.htmlacademy.ru/htmlcss-individual/2/user/2658997).
 * Наставник: [Екатерина Комнатная] (https://htmlacademy.ru/profile/id215761).
+* Сайт: [Мой сайт Седона] (https://ramadan-shishan.github.io/2658997-sedona-2/).
 
 ---
 
