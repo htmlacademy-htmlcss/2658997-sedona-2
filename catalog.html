@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Каталог Седона</title>
+  <title>Каталог</title>
 </head>
 <body>
   <header class="page-header">
@@ -52,7 +52,9 @@
         <h1 class="hotels-header-title">Гостиницы Седоны</h1>
         <ol class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a href="index.html" class="breadcrumbs-link visually-hidden">Главная</a>
+            <a href="index.html" class="breadcrumbs-link">
+              <span class="visually-hidden">Главная</span>
+            </a>
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Гостиницы</a>
@@ -118,8 +120,14 @@
 
           <fieldset class="filter-group">
             <legend class="filter-group-title">Стоимость, ₽:</legend>
-            <input class="price" type="number" name="min-price" placeholder="от">
-            <input class="price" type="number" name="max-price" placeholder="до">
+            <label>
+              От
+              <input class="price" type="number" name="min-price">
+            </label>
+            <label>
+              До
+              <input class="price" type="number" name="max-price">
+            </label>
           </fieldset>
 
           <button class="filter-button button-submit" type="submit">Применить</button>
@@ -132,31 +140,31 @@
     <section class="catalog">
       <h2 class="visually-hidden">Найденные гостиницы</h2>
 
-      <div class="catalog-row">
+      <div class="catalog-view">
         <p>
-          Найдено гостиниц: <span class="amount">38</span>
+          Найдено гостиниц: <span class="hotels-amount">38</span>
         </p>
-        <select class="select-control" aria-label="сортировка">
+        <select class="select-control" aria-label="Сортировка результата поиска">
           <option value="popular">Сначала популярные</option>
           <option value="cheap" selected>Сначала дешевые</option>
           <option value="expensive">Сначала дорогие</option>
         </select>
 
-        <ul class="row-list">
-          <li class="row-item">
-            <a class="row-link" href="#">
+        <ul class="view-list">
+          <li class="view-item">
+            <a class="view-link" href="#">
               <span class="visually-hidden">Показать плитку</span>
             </a>
           </li>
 
-          <li class="row-item">
-            <a class="row-link" href="#">
+          <li class="view-item">
+            <a class="view-link" href="#">
               <span class="visually-hidden">Показать карточки</span>
             </a>
           </li>
 
-          <li class="row-item">
-            <a class="row-link" href="#">
+          <li class="view-item">
+            <a class="view-link" href="#">
               <span class="visually-hidden">Показать список</span>
             </a>
           </li>
@@ -179,7 +187,7 @@
             <button class="cards-favorites">В избранное</button>
 
             <div class="hotel-rating">
-              <span class="rating-stars visually-hidden"></span>
+              <span class="rating-stars" aria-label="Отель 4 звезды"></span>
               <span class="reting-amount">Рейтинг: 8.5</span>
             </div>
           </li>
@@ -198,7 +206,7 @@
             <button class="cards-favorites">В избранное</button>
 
             <div class="hotel-rating">
-              <span class="rating-stars visually-hidden"></span>
+              <span class="rating-stars" aria-label="Отель 4 звезды"></span>
               <span class="reting-amount">Рейтинг: 9.2</span>
             </div>
           </li>
@@ -217,7 +225,7 @@
             <button class="cards-favorites">В избранное</button>
 
             <div class="hotel-rating">
-              <span class="rating-stars visually-hidden"></span>
+              <span class="rating-stars" aria-label="Отель 3 звезды"></span>
               <span class="reting-amount">Рейтинг: 6.9</span>
             </div>
           </li>
@@ -236,44 +244,32 @@
             <button class="cards-favorites">В избранное</button>
 
             <div class="hotel-rating">
-              <span class="rating-stars visually-hidden"></span>
+              <span class="rating-stars" aria-label="Отель 2 звезды"></span>
               <span class="reting-amount">Рейтинг: 5.0</span>
             </div>
           </li>
         </ul>
       </div>
 
-      <div class="catalog-pagination">
+      <div class="catalog-pagination" aria-label="Страницы результата поиска">
         <ul class="pagination-list">
           <li class="pagination-item">
-            <a class="pagination-link pagination-link-current" href="#">
-              <span class="visually-hidden">1-я страница результата поиска</span>
-            </a>
+            <a class="pagination-link pagination-link-current" href="#">1</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">
-              <span class="visually-hidden">2-я страница результата поиска</span>
-            </a>
+            <a class="pagination-link" href="#">2</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">
-              <span class="visually-hidden">3-я страница результата поиска</span>
-            </a>
+            <a class="pagination-link" href="#">3</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">
-              <span class="visually-hidden">4-я страница результата поиска</span>
-            </a>
+            <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">
-              <span>...</span>
-            </a>
+            <a class="pagination-link" href="#">...</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">
-              <span class="visually-hidden">10-я страница результата поиска</span>
-            </a>
+            <a class="pagination-link" href="#">10</a>
           </li>
         </ul>
       </div>
@@ -286,10 +282,10 @@
         <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
 
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="subscribe-email">
-            <span class="visually-hidden">Email</span>
+          <label class="visually-hidden">
+            Email
+            <input class="subscribe-field" type="email" name="subscribe-email" placeholder="Ваш e-mail">
           </label>
-          <input class="subscribe-field" id="subscribe-email" type="email" name="subscribe-email" placeholder="Ваш e-mail">
           <button class="button subscribe-button" type="submit">Подписаться</button>
         </form>
       </section>
@@ -317,10 +313,7 @@
         </ul>
       </section>
 
-      <p class="phone">
-        <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      </p>
-
+      <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <a class="copyright" href="https://htmlacademy.ru/">
         <img class="copyright-img" src="#" alt="Логотип сайта HTML Academy">
       </a>
