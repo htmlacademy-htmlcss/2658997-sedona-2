@@ -295,6 +295,8 @@ body {
 }
 
 .subscribe-field {
+  font-family: inherit;
+  font-size: inherit;
   width: 452px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -367,6 +369,11 @@ body {
   list-style: none;
 }
 
+.control-input{
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
 .filter-group {
   border: none;
 }
