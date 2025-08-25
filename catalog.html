@@ -10,7 +10,7 @@
   <div class="container">
       <header class="page-header" data-test="header">
         <nav class="navigation">
-          <a class="header-logo" href="index.html" aria-current="page">
+          <a class="header-logo logo" href="index.html" aria-current="page">
             <img class="logo-img"
                 src="./images/logo/page-logo.svg"
                 width="140"
@@ -18,6 +18,7 @@
                 alt="Логотип сайта Седона"
             >
           </a>
+
           <ul class="navigation-list">
             <li class="navigation-item">
               <a class="navigation-link" href="index.html">Главная</a>
@@ -30,18 +31,15 @@
             </li>
           </ul>
 
-          <ul class="navigation-list user">
+          <ul class="user-list">
             <li class="user-item">
               <a class="user-link loop" href="#">
-                <span class="visually-hidden">Поиск</span>
+                <span class="search" aria-level="Поиск"></span>
               </a>
             </li>
             <li class="user-item">
               <a class="user-link heart" href="#">
-                <span class="favorite-hotels">
-                  <span class="visually-hidden">Количество избранных гостиниц</span>
-                  12
-                </span>
+                <span class="favorite-hotels" aria-label="Количество избранных гостиниц">12</span>
               </a>
             </li>
           </ul>
@@ -65,7 +63,7 @@
             </li>
           </ol>
           <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="filter-group">
+            <fieldset class="filter-group infrastructure-group">
               <legend class="filter-group-title">Инфраструктура:</legend>
 
               <ul class="filter-list">
@@ -106,7 +104,7 @@
               </ul>
             </fieldset>
 
-            <fieldset class="filter-group">
+            <fieldset class="filter-group house-type-group">
               <legend class="filter-group-title">Тип жилья:</legend>
 
               <ul class="filter-list">
@@ -210,24 +208,24 @@
         <div class="catalog-cards">
           <ul class="cards-list">
             <li class="cards-item">
-              <a class="cards-link" href="#">
-                <h3 class="cards-title cards-grid-title">Amara Resort & Spa</h3>
-              </a>
               <a class="cards-link" href="#" tabindex="-1">
-                <img class="cards-img cards-grid-img"
-                    src="./images/hotel-cards/hotel-1.jpg"
-                    width="300"
-                    height="212"
-                    alt="Гостиница Amara Resort & Spa"
+                <img class="cards-img"
+                src="./images/hotel-cards/hotel-1.jpg"
+                width="300"
+                height="212"
+                alt="Гостиница Amara Resort & Spa"
                 >
+              </a>
+              <a class="cards-link" href="#">
+                <h3 class="cards-title">Amara Resort & Spa</h3>
               </a>
               <p class="cards-description">
                 <span>Гостиница</span>
                 <span>от 4000 ₽</span>
               </p>
 
-              <a class="cards-details button button-brown" href="#">Подробнее</a>
-              <button class="cards-favorites button">В избранное</button>
+              <a class="cards-button cards-details button button-brown" href="#">Подробнее</a>
+              <button class="cards-button cards-favorites button">В избранное</button>
 
               <p class="hotel-rating">
                 <span class="rating-stars four-stars">
@@ -238,16 +236,16 @@
             </li>
 
             <li class="cards-item">
-              <a class="cards-link" href="#">
-                <h3 class="cards-title">Villas at Poco Diablo</h3>
-              </a>
               <a class="cards-link" href="#" tabindex="-1">
                 <img class="cards-img"
-                    src="./images/hotel-cards/hotel-2.jpg"
-                    width="300"
-                    height="212"
-                    alt="Гостиница Villas at Poco Diablo"
+                src="./images/hotel-cards/hotel-2.jpg"
+                width="300"
+                height="212"
+                alt="Гостиница Villas at Poco Diablo"
                 >
+              </a>
+              <a class="cards-link" href="#">
+                <h3 class="cards-title">Villas at Poco Diablo</h3>
               </a>
               <p class="cards-description">
                 <span>Гостиница</span>
@@ -266,16 +264,16 @@
             </li>
 
             <li class="cards-item">
-              <a class="cards-link" href="#">
-                <h3 class="cards-title">Desert Quail Inn</h3>
-              </a>
               <a class="cards-link" href="#" tabindex="-1">
                 <img class="cards-img"
-                    src="./images/hotel-cards/hotel-3.jpg"
-                    width="300"
-                    height="212"
-                    alt="Гостиница Desert Quail Inn"
+                src="./images/hotel-cards/hotel-3.jpg"
+                width="300"
+                height="212"
+                alt="Гостиница Desert Quail Inn"
                 >
+              </a>
+              <a class="cards-link" href="#">
+                <h3 class="cards-title">Desert Quail Inn</h3>
               </a>
               <p class="cards-description">
                 <span>Гостиница</span>
@@ -294,16 +292,16 @@
             </li>
 
             <li class="cards-item">
-              <a class="cards-link" href="#">
-                <h3 class="cards-title">GreenTree Inn</h3>
-              </a>
               <a class="cards-link" href="#" tabindex="-1">
                 <img class="cards-img"
-                    src="./images/hotel-cards/hotel-4.jpg"
-                    width="300"
-                    height="212"
-                    alt="Гостиница GreenTree Inn"
+                src="./images/hotel-cards/hotel-4.jpg"
+                width="300"
+                height="212"
+                alt="Гостиница GreenTree Inn"
                 >
+              </a>
+              <a class="cards-link" href="#">
+                <h3 class="cards-title">GreenTree Inn</h3>
               </a>
               <p class="cards-description">
                 <span>Гостиница</span>
