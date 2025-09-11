@@ -182,5 +182,80 @@
         </div>
       </footer>
     </div>
+
+
+    <div class="modal-container">
+      <button class="modal-button-close" type="button">
+        <span class="visually-hidden">Закрыть модальное окно</span>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14 1.29231L12.7077 0L7 5.70769L1.29231 0L0 1.29231L5.70769 7L0 12.7077L1.29231 14L7 8.29231L12.7077 14L14 12.7077L8.29231 7L14 1.29231Z"/>
+        </svg>
+      </button>
+      <h1 class="modal-title">Поиск гостиницы в Седоне</h1>
+
+      <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="modal-field date-field">
+          <div class="arrival-date">
+            <label class="modal-field-control" for="arrival-date">Дата заезда:
+              <input id="arrival-date"
+                     type="text"
+                     name="arrival-input"
+                     value="27 апреля 2020"
+              >
+              <span class="incorrect-date-text">Мы не можем отправить вас в прошлое.</span>
+            </label>
+            <button class="date-field-calendar"></button>
+          </div>
+
+          <div class="moving-date">
+            <label class="modal-field-control" for="moving-date">Дата выезда:
+              <input id="moving-date"
+                     type="text"
+                     name="moving-input"
+                     value="1 сентября 2023"
+              >
+              <span class="free-numbers-text">На эти даты есть свободные номера. Пока есть.</span>
+            </label>
+            <button class="date-field-calendar"></button>
+          </div>
+        </fieldset>
+
+        <fieldset class="modal-field persons-field">
+          <div class="adults">
+            <button class="persons-add adults-add" type="button">
+              <span class="visually-hidden">Добавить взрослого</span>
+            </button>
+            <label class="modal-field-control" for="adults">Взрослые:</label>
+            <input id="adults"
+                   type="number"
+                   name="adults-input"
+                   value="2"
+            >
+            <button class="persons-sub adults-sub" type="button">
+              <span class="visually-hidden">Убрать взрослого</span>
+            </button>
+          </div>
+
+          <div class="childs">
+            <button class="persons-add childs-add" type="button">
+              <span class="visually-hidden">Добавить ребенка</span>
+            </button>
+            <label class="modal-field-control" for="childs">Дети:</label>
+            <input id="childs"
+                   type="number"
+                   name="childs-input"
+                   value="2"
+            >
+            <button class="persons-sub childs-sub" type="button">
+              <span class="visually-hidden">Убрать ребенка</span>
+            </button>
+          </div>
+        </fieldset>
+        <a class="modal-button" href="#">Найти</a>
+      </form>
+
+      <div class="childs-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+      </div>
+    </div>
   </body>
 </html>
