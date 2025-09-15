@@ -493,6 +493,10 @@ body {
   border-radius: 4px 0 0 4px;
 }
 
+.subscribe-field:hover {
+  background-color: #e5e5e5;
+}
+
 .subscribe-button {
   width: 232px;
   font-family: inherit;
@@ -764,6 +768,10 @@ body {
   padding: 8px 20px;
   border: none;
   color: #000000;
+}
+
+.price-input:hover {
+  background-color: #e5e5e5;
 }
 
 .price-input:focus {
@@ -1127,7 +1135,7 @@ body {
 }
 
 .modal-container-close {
-  /* display: none; */
+  display: none;
 }
 
 .modal {
@@ -1367,10 +1375,12 @@ body {
 }
 
 .modal-search-button {
-  text-align: center;
+  width: 100%;
+  font-size: 20px;
   line-height: 24px;
+  text-align: center;
   border-radius: 10px;
-  padding: 18px 0;
+  padding: 18px;
 }
 
 .modal-search-button:hover,
