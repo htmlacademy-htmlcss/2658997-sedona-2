@@ -596,7 +596,6 @@ body {
 .breadcrumbs {
   display: flex;
   gap: 10px;
-  align-items: center;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -629,20 +628,21 @@ body {
   display: block;
   background-image: url("../images/breadcrumbs-home-icon.svg");
   background-repeat: no-repeat;
+  background-position: 0 3px;
   width: 13px;
-  height: 15px;
+  height: 16px;
 }
 
 .breadcrumbs-item:not(:last-child)::after {
   content: "";
   display: block;
   position: absolute;
-  top: 2px;
+  top: 5px;
   right: 0;
   background-image: url("../images/breadcrumbs-arrow-icon.svg");
   background-repeat: no-repeat;
   width: 8px;
-  height: 11px;
+  height: 12px;
 }
 
 .filter-form {
@@ -831,6 +831,10 @@ body {
   background: #ffffff;
   border-radius: 5px;
   border-style: none;
+}
+
+.range-toggle:hover {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
 .range-toggle:focus {
@@ -1327,9 +1331,22 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  opacity: 0.3;
 }
 
-.persons-button:active {
+.persons-button:focus {
+  border-radius: 4px;
+  fill: #000000;
+  outline: 3px solid #82b3d3;
+}
+
+.persons-button:hover svg,
+.persons-button:focus svg {
+  fill: #000000;
+  opacity: 1;
+}
+
+.persons-button:active svg {
   opacity: 0.2;
 }
 
@@ -1339,16 +1356,6 @@ body {
 
 .persons-add-button {
   left: 218px;
-}
-
-.persons-button svg:hover,
-.persons-button svg:focus {
-  fill: #000000;
-}
-
-.persons-button:focus {
-  border-radius: 4px;
-  outline: 3px solid #82b3d3;
 }
 
 .tooltip {
@@ -1385,7 +1392,7 @@ body {
 .tooltip-text {
   display: none;
   width: 256px;
-  padding: 15px 22px;
+  padding: 20px 18px 22px 22px;
   margin-bottom: 6px;
   font-size: 16px;
   line-height: 20px;
@@ -1393,7 +1400,7 @@ body {
   background-color: #333333;
   border-radius: 10px;
   position: absolute;
-  top: 42px;
+  top: 41px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
