@@ -223,6 +223,7 @@ body {
 }
 
 .navigation-button {
+  width: 160px;
   font-size: 16px;
   line-height: 20px;
   padding: 8px 34px;
@@ -235,7 +236,7 @@ body {
   text-align: center;
   padding-top: 51px;
   padding-bottom: 78px;
-  background-color: #71575c;
+  background-color: #26422a;
   background-image: url("../images/background/promo-divider.svg"), url("../images/background/promo-background.jpg");
   background-size: 100% auto, cover;
   background-position: center bottom, center;
@@ -262,10 +263,7 @@ body {
   width: 400px;
   display: flex;
   flex-direction: column;
-  padding-top: 112px;
-  padding-left: 85px;
-  padding-right: 85px;
-  padding-bottom: 113px;
+  padding: 112px 83px 113px;
 }
 
 .advantages-img-item {
@@ -368,6 +366,7 @@ body {
   padding: 0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .services-item {
@@ -517,6 +516,7 @@ body {
 }
 
 .social-list {
+  width: 142px;
   margin: 0;
   padding: 0;
   display: flex;
@@ -544,6 +544,8 @@ body {
 }
 
 .phone {
+  width: 450px;
+  text-align: center;
   text-decoration: none;
   color: #000000;
   font-size: 40px;
@@ -595,6 +597,7 @@ body {
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   margin: 0;
   padding: 0;
@@ -790,7 +793,7 @@ body {
 }
 
 .price-input[type=number] {
-    -moz-appearance: textfield;
+  -moz-appearance: textfield;
 }
 
 .price-text {
@@ -933,7 +936,7 @@ body {
   width: 292px;
   height: 49px;
   padding-left: 18px;
-  padding-right: 32px;
+  padding-right: 40px;
   margin-right: 70px;
   font-family: inherit;
   font-size: inherit;
@@ -941,6 +944,7 @@ body {
   color: inherit;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
+  background-color: #ffffff;
   background-image: url("../images/select-arrow-icon.svg");
   background-repeat: no-repeat;
   background-position: top 18px right 19px;
@@ -960,10 +964,12 @@ body {
 }
 
 .view-list {
+  width: 160px;
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
 }
 
@@ -1153,10 +1159,11 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
+  overflow-y: auto;
 }
 
 .modal-container-close {
-  display: none;
+  /* display: none; */
 }
 
 .modal {
@@ -1211,6 +1218,7 @@ body {
 
 .modal-title {
   text-align: start;
+  padding-right: 150px;
   margin-bottom: 64px;
 }
 
@@ -1223,36 +1231,28 @@ body {
 .modal-field-persons {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 48px;
 }
 
 .modal-field-content {
-  position: relative;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
-.date-content::after {
-  content: "";
-  display: block;
-  width: 16px;
-  height: 15px;
-  position: absolute;
-  top: 16px;
-  right: 22px;
-  background-image: url("../images/calendar-icon.svg");
-  background-repeat: no-repeat;
-  opacity: 0.3;
-}
-
 .modal-field-label {
+  display: inline-block;
   width: 137px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
   color: #000000;
   text-transform: capitalize;
+  padding-right: 10px;
+}
+
+.child-label {
+  width: auto;
 }
 
 .modal-field-input {
@@ -1282,18 +1282,38 @@ body {
 }
 
 .modal-field-input[type=number] {
-    -moz-appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+.date-input-container {
+  position: relative;
+}
+
+.date-input-container::after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 15px;
+  position: absolute;
+  top: 16px;
+  right: 22px;
+  background-image: url("../images/calendar-icon.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
 }
 
 .date-input {
   position: relative;
   width: 440px;
   padding: 0 50px 0 20px;
-  margin-bottom: 4px;
+}
+
+.persons-input-container {
+  position: relative;
 }
 
 .persons-input {
-  width: 110px;
+  width: 111px;
   line-height: 20px;
   text-align: center;
   padding: 0;
@@ -1305,6 +1325,7 @@ body {
   line-height: 21px;
   color: #333333;
   padding: 0 20px;
+  margin-top: 4px;
   margin-left: 137px;
   margin-bottom: 23px;
 }
@@ -1316,6 +1337,8 @@ body {
 .persons-button {
   display: block;
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   width: 20px;
   height: 20px;
   background-color: transparent;
@@ -1351,28 +1374,32 @@ body {
 }
 
 .persons-sub-button {
-  left: 147px;
+  left: 10px;
 }
 
 .persons-add-button {
-  left: 218px;
+  right: 10px;
 }
 
-.tooltip {
-  display: block;
-  position: absolute;
-  left: 63px;
+.tooltip-container {
+  width: 131px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 
 .tooltip-button {
-  display: block;
   width: 26px;
   height: 26px;
+  position: relative;
   border-radius: 50%;
   padding: 0;
   margin: 0;
   border: none;
   background-color: #83b3d3;
+  background-image: url("../images/tooltip-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .tooltip-button:hover,
@@ -1384,8 +1411,8 @@ body {
   background-color: rgba(104, 162, 202, 0.3);
 }
 
-.tooltip-button:hover + .tooltip-text,
-.tooltip-button:focus + .tooltip-text {
+.tooltip-button:hover .tooltip-text,
+.tooltip-button:focus .tooltip-text {
   display: block;
 }
 
@@ -1393,16 +1420,16 @@ body {
   display: none;
   width: 256px;
   padding: 20px 18px 22px 22px;
-  margin-bottom: 6px;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+  text-align: left;
   background-color: #333333;
   border-radius: 10px;
   position: absolute;
   top: 41px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: -115px;
   z-index: 1;
 }
 
