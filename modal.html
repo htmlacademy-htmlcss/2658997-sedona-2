@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="icon" href="./favicon.ico">
-    <link rel="icon" href="./images/favicon.png">
+    <link rel="icon" type="image/png" href="./images/favicon.png">
     <title>Главная страница</title>
   </head>
 
@@ -41,7 +41,9 @@
             </li>
           </ul>
 
-          <a class="navigation-button button button-brown" href="#">Хочу сюда!</a>
+          <div class="navigation-button-container">
+            <a class="navigation-button button button-brown" href="#">Хочу сюда!</a>
+          </div>
         </nav>
       </header>
 
@@ -176,8 +178,10 @@
             </ul>
           </section>
 
-          <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          <a class="footer-logo" href="https://htmlacademy.ru/">
+          <div class="footer-phone-container">
+            <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          </div>
+          <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss">
             <span class="visually-hidden">Ссылка на сайт HTML Academy</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="115" height="34" fill="#000000" role="img">
               <path
@@ -188,7 +192,7 @@
       </footer>
     </div>
 
-    <div class="modal-container modal-container-close" data-test="modal">
+    <div class="modal-container" data-test="modal">
       <div class="modal modal-search">
         <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть модальное окно</span>
@@ -222,21 +226,25 @@
                 <label class="modal-field-label" for="adults">Взрослые:</label>
 
                 <div class="persons-input-container">
-                  <button class="persons-button persons-sub-button" type="button">
+                  <span class="persons-button-container persons-sub-button-container">
+                    <button class="persons-button persons-sub-button" type="button">
                     <span class="visually-hidden">Уменьшить количество взрослых</span>
                     <svg width="14" height="2" viewBox="0 0 14 2" fill="#756157" xmlns="http://www.w3.org/2000/svg">
                       <path d="M0 0L0 2L14 2V0L0 0Z" />
                     </svg>
                   </button>
+                  </span>
 
                   <input class="modal-field-input persons-input" id="adults" type="number" name="adults" value="2">
 
-                  <button class="persons-button persons-add-button" type="button">
+                  <span class="persons-button-container persons-add-button-container">
+                    <button class="persons-button persons-add-button" type="button">
                     <span class="visually-hidden">Увеличить количество взрослых</span>
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="#756157" xmlns="http://www.w3.org/2000/svg">
                       <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
                     </svg>
                   </button>
+                  </span>
                 </div>
               </div>
 
@@ -248,22 +256,27 @@
                       будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                   </button>
                 </div>
+
                 <div class="persons-input-container">
-                  <button class="persons-button persons-sub-button" type="button">
+                  <span class="persons-button-container persons-sub-button-container">
+                    <button class="persons-button persons-sub-button" type="button">
                     <span class="visually-hidden">Уменьшить количество детей</span>
                     <svg width="14" height="2" viewBox="0 0 14 2" fill="#756157" xmlns="http://www.w3.org/2000/svg">
                       <path d="M0 0L0 2L14 2V0L0 0Z" />
                     </svg>
                   </button>
+                  </span>
 
                   <input class="modal-field-input persons-input" id="child" type="number" name="childs" value="2">
 
-                  <button class="persons-button persons-add-button" type="button">
+                  <span class="persons-button-container persons-add-button-container">
+                    <button class="persons-button persons-add-button" type="button">
                     <span class="visually-hidden">Увеличить количество детей</span>
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="#756157" xmlns="http://www.w3.org/2000/svg">
                       <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
                     </svg>
                   </button>
+                  </span>
                 </div>
               </div>
             </fieldset>

@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="icon" type="image/png" href="./images/favicon.png">
     <title>Каталог</title>
   </head>
 
@@ -39,7 +41,9 @@
             </li>
           </ul>
 
-          <a class="navigation-button button button-brown" href="#">Хочу сюда!</a>
+          <div class="navigation-button-container">
+            <a class="navigation-button button button-brown" href="#">Хочу сюда!</a>
+          </div>
         </nav>
       </header>
 
@@ -53,7 +57,7 @@
               </a>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="./catalog.html" aria-current="page">Гостиницы</a>
+              <a class="breadcrumbs-link">Гостиницы</a>
             </li>
           </ol>
 
@@ -204,8 +208,12 @@
                 <span> Гостиница</span>
                 <span class="cards-price"> От 4000 ₽</span>
 
-                <a class="cards-button button button-brown" href="#">Подробнее</a>
-                <button class="cards-button button button-blue" type="button"> В избранное</button>
+                <span class="cards-button-container">
+                  <a class="cards-button button button-brown" href="#"> Подробнее </a>
+                </span>
+                <span class="cards-button-container">
+                  <button class="cards-button button button-blue" type="button"> В избранное</button>
+                </span>
 
                 <span class="rating-stars four-stars">
                   <span class="visually-hidden">Отель 4 звезды</span>
@@ -219,18 +227,21 @@
                     alt="Гостиница Villas at Poco Diablo">
                 </a>
                 <a class="cards-link" href="#">
-                  <h3 class="cards-title">Villas at Poco Diablo</h3>
+                  <h3 class="cards-title"> Villas at Poco Diablo</h3>
                 </a>
 
                 <span>Гостиница</span>
                 <span class="cards-price">От 5000 ₽</span>
 
-                <a class="cards-button button button-brown" href="#">Подробнее</a>
-                <button class="cards-button cards-favorites-current button button-blue" type="button">В
-                  избранном</button>
+                <span class="cards-button-container">
+                  <a class="cards-button button button-brown" href="#"> Подробнее </a>
+                </span>
+                <span class="cards-button-container">
+                  <button class="cards-button cards-favorites-current button button-blue" type="button"> В избранном </button>
+                </span>
 
                 <span class="rating-stars four-stars">
-                  <span class="visually-hidden">Отель 4 звезды</span>
+                  <span class="visually-hidden"> Отель 4 звезды</span>
                 </span>
                 <span class="rating-amount">Рейтинг: 9.2</span>
               </li>
@@ -247,8 +258,12 @@
                 <span>Гостиница</span>
                 <span class="cards-price">От 2500 ₽</span>
 
-                <a class="cards-button button button-brown" href="#">Подробнее</a>
-                <button class="cards-button button button-blue" type="button">В избранное</button>
+                <span class="cards-button-container">
+                  <a class="cards-button button button-brown" href="#"> Подробнее </a>
+                </span>
+                <span class="cards-button-container">
+                  <button class="cards-button button button-blue" type="button"> В избранное </button>
+                </span>
 
                 <span class="rating-stars three-stars">
                   <span class="visually-hidden">Отель 3 звезды</span>
@@ -268,8 +283,12 @@
                 <span>Гостиница</span>
                 <span class="cards-price">От 1500 ₽</span>
 
-                <a class="cards-button button button-brown" href="#">Подробнее</a>
-                <button class="cards-button button button-blue" type="button">В избранное</button>
+                <span class="cards-button-container">
+                  <a class="cards-button button button-brown" href="#"> Подробнее </a>
+                </span>
+                <span class="cards-button-container">
+                  <button class="cards-button button button-blue" type="button"> В избранное </button>
+                </span>
 
                 <span class="rating-stars two-stars">
                   <span class="visually-hidden">Отель 2 звезды</span>
@@ -351,8 +370,10 @@
             </ul>
           </section>
 
-          <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          <a class="footer-logo" href="https://htmlacademy.ru/">
+          <div class="footer-phone-container">
+            <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          </div>
+          <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss">
             <span class="visually-hidden">Ссылка на сайт HTML Academy</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="115" height="34" fill="#000000" role="img">
               <path
